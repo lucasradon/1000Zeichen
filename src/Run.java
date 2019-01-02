@@ -2,8 +2,6 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.LinkedList;
-import java.util.List;
 
 public class Run {
 
@@ -13,9 +11,17 @@ public class Run {
     static int g = 0;
 
     public static void main(String[] args) throws IOException {
+        System.out.println("4 Nachbarn");
         readin("aufgabenblatt10_bild.txt");
         Ausgabe();
-        Vereinigung();
+        Vereinigung(4);
+        GrosseRegions();
+        Ausgabe();
+        System.out.println("Die Größte Region ist "+biggest.getZeichen()+" mit einer Anzahl von "+biggest.getAnzahl()+" zusammenhängenden Zeichen.");
+        System.out.println("8 Nachbarn");
+        g=0; o=65;
+        readin("aufgabenblatt10_bild.txt");
+        Vereinigung(8);
         GrosseRegions();
         Ausgabe();
         System.out.println("Die Größte Region ist "+biggest.getZeichen()+" mit einer Anzahl von "+biggest.getAnzahl()+" zusammenhängenden Zeichen.");
@@ -64,15 +70,15 @@ public class Run {
             return compressrek(region.getElternregion());
         }
     }
-
     /**
      * Methode zum Vereinigen benachbarter Regionen
      */
-    static void Vereinigung() {
+    static void Vereinigung(int l) {
 
         for (int i = 0; i < regions.length; i++) {
             for (int j = 0; j < regions[i].length; j++) {
                 //getNachbarn
+                nachbarregionen = new Region[l];
                 getNachbarn(i, j);
                 Region aktuelleRegion = regions[i][j];
                 //Nachbarregionen duchegehen
@@ -100,8 +106,8 @@ public class Run {
         }
     }
 
-    static Region nachbar1, nachbar2, nachbar3, nachbar4;
-    static Region[] nachbarregionen = new Region[4];
+
+    static Region[] nachbarregionen;
 
     /**
      *          nachbar1
@@ -112,30 +118,26 @@ public class Run {
      * @param j
      */
     static void getNachbarn(int i, int j) {
-        try {
-            nachbar1 = regions[i - 1][j];
-        } catch (ArrayIndexOutOfBoundsException e) {
-            nachbar1 = null;
+        int k=0;
+        int ri=i,rj=j;
+        while (k<nachbarregionen.length) {
+            switch (k) {
+                case 0: ri=i-1; rj=j; break;
+                case 1: ri=i;   rj=j-1; break;
+                case 2: ri=i+1; rj=j; break;
+                case 3: ri=i;   rj=j+1; break;
+                case 4: ri=i-1; rj=j-1; break;
+                case 5: ri=i+1; rj=j-1; break;
+                case 6: ri=i+1; rj=j+1; break;
+                case 7: ri=i-1; rj=j+1; break;
+            }
+            try {
+                nachbarregionen[k] = regions[ri][rj];
+            } catch (ArrayIndexOutOfBoundsException e) {
+                nachbarregionen[k] = null;
+            }
+            k++;
         }
-        try {
-            nachbar2 = regions[i][j - 1];
-        } catch (ArrayIndexOutOfBoundsException e) {
-            nachbar2 = null;
-        }
-        try {
-            nachbar3 = regions[i + 1][j];
-        } catch (ArrayIndexOutOfBoundsException e) {
-            nachbar3 = null;
-        }
-        try {
-            nachbar4 = regions[i][j + 1];
-        } catch (ArrayIndexOutOfBoundsException e) {
-            nachbar4 = null;
-        }
-        nachbarregionen[0] = nachbar1;
-        nachbarregionen[1] = nachbar2;
-        nachbarregionen[2] = nachbar3;
-        nachbarregionen[3] = nachbar4;
     }
 
     /**
