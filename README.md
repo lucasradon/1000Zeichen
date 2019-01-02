@@ -3,7 +3,7 @@
 
 Das Bild stellt eine Katze dar
 
-``+shdmNNNNy///::::://////+/////::::::::::--------:::::::::--:///++sso+oshhs+++//////////++++++//////:
+`+shdmNNNNy///::::://////+/////::::::::::--------:::::::::--:///++sso+oshhs+++//////////++++++//////:
 :++sydmNNMms+++/////++++++/////////:::::------:::::::-:::/+oso+yyyy+shdhs++//::///////+++++++++++++/
 ::/+oshmmNNMNdyyyyyssyyysssysssssshyyssso+/::::-://++oyhhhhhhhdhhyohdhsoo+:::///:::://++oooooooooo++
 /++oooyhddmNNNNmddddhdhhdyyyydhhssyyhyhyyyyyso++osyhhhmmmNNmmmmdyymdyoo+:-://:::::::/++ossoossssssoo
@@ -13,7 +13,7 @@ osyhhddddmNNNNNNNNMMMmmmNNNNhmmmddNmdmmddo//-:shdmmmdmdmmmmmmhhds+/:////+ooooooo
 hddmNNNNNNNNNNNNNNMMMMNNmmNNNhNmddmNmmmmmds..-+oshhmNdmmmmmmhhmys/+++//+ossssooo+++++o++++++/////++o
 mmmmNNNNNMMMMMMMNNMMMMMMMNdmNNhNddNNmmmhmh/-``-:-+sdmhyddmmhhdyyos+//+++ooooosooooooo++++///:::::///
 mNNNNMMMMMMMMMMMNNMNNMNNNNNmdNmddmNNNNmydyo:````../shooydmhyhyyhyso++osysssssooo+++++++////:::::::::
-NNNNMNNMMMMMNNNMNNNMMNMNNNNNNdNmddNNNmdhys+-``   `.:o//syhyyysysooooysssssssoo+++++///////::::----::
+NNNNMNNMMMMMNNNMNNNMMNMNNNNNNdNmddNNNmdhys+-```.:o//syhyyysysooooysssssssoo+++++///////::::----::
 NNNNNNNNNNNNNNNNNNNNNNmmmmmmNNdmNmNmNNNsoo/.````  ``-::+yyyyysoydhssssyyyyyyysoo++/////////:::::::::
 NNNNNNNNNNNNNmmNmNNmmmdhddmmNNNmhmNmNmhh+/.`````  ````./o+sysyhysyyssyyyyyyyyyssoo++////////:::::://
 NNNNNNNNNNmmmmmmmmmmmdddhdmmmNNNhmmNmmyds/`````````````.:osshyhhhyysssyyyyyyyyyysoo+++++++////:///+o
@@ -111,4 +111,4 @@ aaaaaaaaaaaaaaaaaaaaaaaaZMMMMMMMaaaaaaaaaaaaaaaaa     RRRRRRRRRRRRR   W      WWW
    aaaaaaaaaaaa aaaZZZZZaaaaaaaaaaaaa aaa  a           RRRRRRRRRRRR           WX   XW               
 
 
-''Die Größte Region ist H mit einer Anzahl von 474 zusammenhängenden Zeichen.
+Die Größte Region ist H mit einer Anzahl von 474 zusammenhängenden Zeichen.
