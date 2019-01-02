@@ -2,6 +2,7 @@
 //Info3Aufgabe10-1
 
 Das Bild stellt eine Katze dar
+
 +shdmNNNNy///::::://////+/////::::::::::--------:::::::::--:///++sso+oshhs+++//////////++++++//////:
 :++sydmNNMms+++/////++++++/////////:::::------:::::::-:::/+oso+yyyy+shdhs++//::///////+++++++++++++/
 ::/+oshmmNNMNdyyyyyssyyysssysssssshyyssso+/::::-://++oyhhhhhhhdhhyohdhsoo+:::///:::://++oooooooooo++
